@@ -1,0 +1,255 @@
+body {
+    width: 100%;  
+    height: 100vh; 
+    padding: 0; 
+    position: absolute;
+ 
+  }
+#main{
+    
+    background: linear-gradient(-45deg, #0A758A, #04323B);
+    position: relative;
+   top: 10px;
+   left: 6px;
+   border-radius: 20px;
+ 
+}
+.form-container{
+
+  
+    /* background: linear-gradient(-45deg, #04323B,#0A758A ); */
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 0;
+    padding: 30px;
+    border-radius: 30px;
+}
+.form-container .title{
+    color: #000;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 25px;
+}
+
+.form-container .sub-title{
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+.form-container .form-horizontal{ font-size: 0; }
+.form-container .form-horizontal .form-group{
+    color: #333;
+    width: 50%;
+    padding: 0 8px;
+    margin: 0 0 15px;
+    display: inline-block;
+}
+.form-container .form-horizontal .form-group:nth-child(4){ margin-bottom: 30px; }
+.form-container .form-horizontal .form-group label{
+    font-size: 17px;
+    font-weight: 600;
+}
+.form-container .form-horizontal .form-control{
+    background: #fff;
+    font-weight: 400;
+    letter-spacing: 1px;
+    height: 40px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    border: 2px solid #e7e7e7;
+    box-shadow: none;
+    padding-left: 30px;
+}
+
+.form-container .form-horizontal .check-terms .checkbox:before{
+    content: '';
+    height: 5px;
+    width: 9px;
+    border-bottom: 2px solid #00A9EF;
+    border-left: 2px solid #00A9EF;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 2px;
+    top: 2.5px;
+    transition: all 0.3s ease;
+}
+.form-container .form-horizontal .check-terms .checkbox:checked:before{ opacity: 1; }
+.form-container .form-horizontal .check-terms .checkbox:not(:checked):before{ opacity: 0; }
+.form-container .form-horizontal .check-terms .checkbox:focus{ outline: none; }
+.form-container .signin-link{
+    color: #333;
+    font-size: 14px;
+    width: calc(100% - 190px);
+    margin-right: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+.form-container .signin-link a{
+    color: #0A758A;
+    font-weight: 600;
+    transition: all 0.3s ease 0s;
+}
+.form-container .signin-link a:hover{ text-decoration: underline; }
+.form-container .form-horizontal .signup{
+    color: #fff;
+    background: #0A758A;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 160px;
+    padding: 8px 15px 9px;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+}
+.form-container .form-horizontal 
+.form-container .form-horizontal {
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    box-shadow: 3px 3px rgba(0,0,0,0.15),5px 5px rgba(0,0,0,0.1);
+    outline: none;
+}
+@media only screen and (max-width:479px){
+    .form-container .form-horizontal .form-group{ width: 100%; }
+    .form-container .signin-link{
+        width: 100%;
+        margin: 0 10px 15px;
+    }
+}
+
+
+#img-doctors{
+    
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
+}
+.content {
+    
+    margin-top: 27px;
+    text-align: center;
+    background: linear-gradient(-45deg, #0A758A, #04323B);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+
+.content h3 {
+  font-size: 24px;
+  color: white;
+}
+.content h3::after{
+    content: '';
+    background-color: #00A9EF;
+    height: 3px;
+    width: 160px;
+    margin: 10px 0 0;
+    display: block;
+    clear: both;
+    position: relative;
+    left: 33px;
+}
+.content p {
+  font-size: 16px;
+  color: #eee;
+  
+}
+
+input#border-input,#phone,#Specialities,#departements {
+
+    border: 2px solid #0A758A;
+    border-radius: 50px;
+ padding-left: 33px;
+    
+}
+#description{
+    border: 2px solid #0A758A;
+
+}
+.label-input{
+    color: white;
+}
+/* icons inside the inputs*/
+.input-with-icon {
+    position: relative;
+  }
+  
+  .input-with-icon input {
+    padding-left: 30px; 
+  }
+  
+  .input-with-icon svg {
+    position: absolute;
+    left: 8px; /* Adjust the positioning of the icon */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .btn-s {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    background: #0A758A;
+    color: #fff !important; /* Ensure text color is set to white */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    top: -9px;
+    
+}
+.btn-s:hover {
+    background: #439961;
+}
+
+a {
+    text-decoration: none;
+    
+    
+}
+
+@media (max-width: 767px) {
+ /* bootstrap make it */
+  }
+  
+  /* Adjustments for medium-sized devices */
+  @media (min-width: 768px) and (max-width: 991px) {
+    #main{
+        max-height: 121%;
+        position: relative;
+       top: 27px;
+       left: 6px;
+    }
+    #btn-responsive{
+        width: 150px;
+        height: 40px;
+        border: none;
+        border-radius: 50px;
+        background: #0A758A;
+        color: #fff !important; /* Ensure text color is set to white */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        font-weight: 600;
+        cursor: pointer;
+        position: relative;
+        top: -9px;
+        left: -149px;
+        margin-left:10rem;
+        margin-top:10px;
+    }
+    .input-with-icon input::placeholder,textarea::placeholder,#phone::placeholder{
+        visibility: hidden;
+    }
+    #img-doctors{
+        position: relative;
+        top: 44px;
+        
+    }
+    .content{
+        position: relative;
+        top: 44px;
+    }
+
+  }
+  
