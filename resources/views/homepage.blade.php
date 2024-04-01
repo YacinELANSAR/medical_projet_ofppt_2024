@@ -283,6 +283,7 @@
           <div class="col-12 py-3">
             <!-- Your other content here -->
             <h1 class="text-center">Médecins</h1>
+            @if($doctors->count()>0)
             <div class="row">
               @foreach ($doctors as $key => $doctor)
               @if ($key % 3 == 0)
@@ -310,6 +311,10 @@
             <div class="d-flex justify-content-center mt-3">
               {{ $doctors->links() }}
             </div>
+            @else
+            <h3 class="text-center" style="color: black !important;">Aucun docteur </h3>
+        <h3 class="text-center" style="color: black !important;">Loading ...</h3>
+            @endif
           </div>
         </div>
       </div>

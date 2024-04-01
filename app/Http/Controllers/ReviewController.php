@@ -22,7 +22,7 @@ class ReviewController extends Controller
             'md' => 3, // for medium screens
             'sm' => 2, // for small screens
         ];
-        $doctors = Doctor::with('departement','ville')->paginate(3);
+        $doctors = Doctor::with('departement','ville')->where('isVerified',1)->paginate(3);
         $commentaires=Review::paginate(3);
         return view('homepage',compact('commentaires', 'commentsPerRow','doctors'));
     }

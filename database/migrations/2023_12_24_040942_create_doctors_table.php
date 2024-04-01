@@ -24,9 +24,11 @@ return new class extends Migration
             $table->string('phonenumber');
             $table->string('description');
             $table->string('email')->unique();
+            $table->boolean('isVerified')->default(0);
             $table->string('password');
             $table->foreignId('departement_id')->constrained('departements')->onDelete('restrict');
             $table->foreignId('ville_id')->constrained('villes')->onDelete('restrict');
+            
             $table->timestamps();
         });
     }

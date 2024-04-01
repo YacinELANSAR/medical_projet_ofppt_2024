@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\Departement;
 use App\Models\Doctor;
+use App\Models\User;
 use App\Models\Ville;
 use Illuminate\Http\Request;
 // use Illuminate\Support\Carbon;
@@ -141,7 +142,7 @@ class AuthDoctor extends Controller
             }
             return back()->withErrors('Ces identifiants ne correspondent pas à nos enregistrements')->onlyInput('email');
         }
-
+        
         public function logout(Request $request){
             Session::flush();
             $request->session()->invalidate();

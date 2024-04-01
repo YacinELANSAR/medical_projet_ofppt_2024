@@ -194,7 +194,7 @@
         <script>
             Swal.fire({
                 icon: 'success',
-                title: 'voit plus tard ',
+                title: 'voit plus tard',
                 text: '{{ Session::get('success ')}}',
                 confirmButtonColor: '#0A758A'
             });

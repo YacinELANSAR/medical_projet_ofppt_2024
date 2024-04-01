@@ -25,7 +25,7 @@ class RecherchController extends Controller
         $villes=Ville::all();
         $depart=$request -> departements;
         $ville=$request -> city;
-        $doctordepart=$doctor->where('departement_id',$depart)->where('ville_id',$ville);
+        $doctordepart=$doctor->where('departement_id',$depart)->where('ville_id',$ville)->where('isVerified',1);
         
         return view('cardss',compact('doctordepart','deparetements','villes'));
         // dd($doctordepart);

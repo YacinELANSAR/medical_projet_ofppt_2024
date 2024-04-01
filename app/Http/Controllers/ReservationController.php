@@ -23,7 +23,7 @@ class ReservationController extends Controller
 
     $id=auth()->user()->id;
     if ($doctor) {     
-        $reservations = demande_client::where('doctor_id', $id)
+        $reservations = demande_client::where('doctor_id', $id)->where('isVerified',1)
     ->whereIn('status', ['encours', 'programmé'])
     ->get();
         
